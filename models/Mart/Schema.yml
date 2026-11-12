@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: orders_append
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Delivered', 'Processing', 'Shipped', 'Cancelled', 'pending']
