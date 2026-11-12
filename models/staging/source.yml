@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DB
+    schema: RAW_SCHEMA
+    tables:
+      - name: CUSTOMERS
+        identifier: "CUSTOMERS"
+      - name: ORDERS
+        identifier: "ORDERS"
+      - name: PRODUCTS
+        identifier: "PRODUCTS"
